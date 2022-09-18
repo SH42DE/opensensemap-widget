@@ -46,11 +46,6 @@ exports.overrides = {
       public: './dist'
     },
     plugins: {
-      jscc: {
-        values: {
-          _ADDRESS: 'https://sensebox.github.io/opensensemap-widget/'
-        }
-      },
       babel: {
         presets: [
           [

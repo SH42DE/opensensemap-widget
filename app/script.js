@@ -8,9 +8,9 @@ const widget = document.querySelector('[data-sensebox-id]');
 const { senseboxId, initialTab } = widget.dataset;
 let selectedTab;
 
-const WIDGET_BASE_URL = '$_ADDRESS';
+const WIDGET_BASE_URL = 'http://localhost:8080/dist/';
 const REFRESH_INTERVAL = 150000; // 2.5 minutes
-const API_BASE_URL = `https://api.opensensemap.org/boxes/${senseboxId}`;
+const API_BASE_URL = `http://localhost:8080/proxy.php?sensebox-id=${senseboxId}`;
 const DEPS_BASE_URL = 'https://unpkg.com/';
 
 const userLang = navigator.language || navigator.userLanguage;
