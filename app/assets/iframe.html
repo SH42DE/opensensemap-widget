@@ -1,22 +1,7 @@
 <link rel="stylesheet" href="style.css">
 
-<!-- bootstrap script for iframe -->
-<script type="text/javascript">
-// parse url query
-var q = {};
-var query = window.location.search.split('&');
-query.forEach(function(elem, i, arr) {
-    if (i == 0) elem = elem.slice(1); // rm the '?'
-    var prop = elem.split('=');
-    q[prop[0]] = prop[1];
-});
-
-// set values
-var widget = document.querySelector('div');
-widget.dataset.senseboxId = q.senseboxId;
-if (q.initialTab)
-  widget.dataset.initialTab = q.initialTab;
-</script>
+<!-- widget container with deafult values -->
+<div data-sensebox-id="5f1d88ca9fc38a001b22e416" style="width:100%;height:100%;"></div>
 
 <!-- load widget content & logic -->
 <script src="./vendor.js" defer="defer"></script>
