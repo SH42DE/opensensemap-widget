@@ -9,8 +9,7 @@ exports.files = {
       'vendor.js': /^(?!app)/,
       'script.js': /^app/
     }
-  },
-  stylesheets: { joinTo: 'style.css' }
+  }
 };
 
 exports.plugins = {

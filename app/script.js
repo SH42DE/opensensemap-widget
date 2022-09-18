@@ -581,10 +581,7 @@ const initSelectChangeListener = function initSelectChangeListener() {
     .addEventListener('change', changeSensorGraph);
 };
 
-Promise.all([
-  getWidgetHTML(),
-  insertStylesheetWithOnloadListener(`${WIDGET_BASE_URL}style.css`)
-])
+Promise.all([getWidgetHTML()])
   .then(results => {
     const [content] = results;
     widget.innerHTML = content;
